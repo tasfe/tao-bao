@@ -1,0 +1,198 @@
+<?xml version="1.0" encoding="GBK" standalone="yes"?>
+<site xsi:noNamespaceSchemaLocation="../../site.xsd" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance">
+    <id>695ed703a077490c9a43ba955949776d</id>
+    <name>时尚 扶植版/拓展版 超值!时尚日韩范儿男女服饰/鞋包百搭</name>
+    <author url="http://www.taobao.com" wangwang=""></author>
+    <thumbnail>assets/images/frontpage.png</thumbnail>
+    <language>php</language>
+    <version>1.0.0</version>
+    <apply-sites>3,7</apply-sites>
+    <change-notes>修改调试详情页面左侧BUG</change-notes>
+    <description>易于安装 免费升级</description>
+    <global>
+        <header>header.php</header>
+        <footer>footer.php</footer>
+        <css>assets/stylesheets/global.css</css>
+    </global>
+    <styles default="blue">
+        <style>
+            <name>blue</name>
+            <thumbnail>/assets/images/frontpage.png</thumbnail>
+            <css>assets/stylesheets/blue.css</css>
+        </style>
+    </styles>
+    <rules>
+        <common>
+            <support>
+                <module version="1.0-common" shortname="shop.itemCategory"/>
+                <module version="1.0-common" shortname="shop.fileList"/>
+                <module version="1.0-common" shortname="shop.fileListDefault"/>
+                <module version="1.0-common" shortname="shop.fileDir"/>
+                <module version="1.0-common" shortname="shop.fileDirDefault"/>
+                <module version="1.0-common" shortname="shop.fileSearch"/>
+                <module version="1.0-common" shortname="shop.fileDetail"/>
+                <module version="1.0-common" shortname="shop.searchInShop"/>
+                <module version="1.0-common" shortname="shop.searchInShopHead"/>
+                <module version="1.0-common" shortname="shop.selfDefining"/>
+                <module version="1.0-common" shortname="shop.topList"/>
+                <module version="1.0-common" shortname="shop.forumShow"/>
+                <module version="1.0-common" shortname="shop.picRound"/>
+                <module version="1.0-common" shortname="shop.flashBanner"/>
+                <module version="1.0-wangpu" shortname="shop.autoSpread"/>
+                <module version="1.0-wangpu" shortname="shop.itemRecommend"/>
+                <module version="1.0-wangpu" shortname="shop.manualSpread"/>
+                <module version="1.0-wangpu" shortname="shop.searchList "/>
+                <module id="Action"/>
+                <module id="Carousel"/>
+                <module id="HotSale"/>
+                <module id="SlideW920"/>
+                <module id="ItemInfo"/>
+                <module id="Notice"/>
+                <module id="FloatSp"/>
+            </support>
+        </common>
+    </rules>
+    <pages>
+        <page type="index">
+            <name>首页</name>
+            <thumbnail>assets/images/index.png</thumbnail>
+            <file>index.php</file>
+            <content>&lt;![CDATA[&lt;div class="layout grid-m"&gt;
+  &lt;div class="col-main"&gt;
+    &lt;div class="main-wrap J_TRegion"&gt;
+      &lt;?php
+		$main_modules = array(
+			array('id'=&gt;'SlideW920',domId=&gt;'ec_0'),
+			array('id'=&gt;'HotSale',domId=&gt;'ec_1'),
+			array('id'=&gt;'Action',domId=&gt;'ec_2'),
+			array('id'=&gt;'Carousel',domId=&gt;'ec_3'),
+			array('id'=&gt;'HotSale',domId=&gt;'ec_4'),
+			array('id'=&gt;'Carousel',domId=&gt;'ec_5'),
+			array('shortname' =&gt; 'shop.autoSpread', 'version' =&gt; '1.0-wangpu', domId =&gt; "index_01"),
+			array('shortname' =&gt; 'shop.manualSpread', 'version' =&gt; '1.0-wangpu', domId =&gt; "index-02"),
+			array('shortname' =&gt; 'shop.itemRecommend', 'version' =&gt; '1.0-wangpu', domId =&gt; "index-03"),
+		);
+		echo include_modules('main-modules', $main_modules);
+      ?&gt;
+    &lt;/div&gt;
+  &lt;/div&gt;
+&lt;/div&gt;
+]]&gt;</content>
+            <description>首页</description>
+        </page>
+        <page type="detail">
+            <name>宝贝详情页</name>
+            <thumbnail>assets/images/details.png</thumbnail>
+            <file>detail.php</file>
+            <content>&lt;![CDATA[&lt;!-- detail --&gt;]]&gt;</content>
+            <description>宝贝详情页</description>
+            <sections>
+                <section name="left">&lt;![CDATA[detail_left.php]]&gt;</section>
+                <section name="right">&lt;![CDATA[detail_right.php]]&gt;</section>
+            </sections>
+        </page>
+        <page type="article">
+            <name>文章页面</name>
+            <thumbnail>assets/images/article.png</thumbnail>
+            <file>article.php</file>
+            <content>&lt;![CDATA[&lt;div class="layout grid-s5m0"&gt;
+	&lt;div class="col-main"&gt;
+		&lt;div class="main-wrap J_TRegion"&gt;
+
+			&lt;?
+				$main_modules = array(
+					array('shortname' =&gt; 'shop.fileDetail', 'version' =&gt; '1.0-common', domId =&gt; "article-1"),
+				);
+
+				echo include_modules('main-modules', $main_modules);
+			?&gt;
+
+		&lt;/div&gt;
+	&lt;/div&gt;
+
+	&lt;div class="col-sub J_TRegion"&gt;
+
+		&lt;?php
+
+			$sub_modules = array(
+				array('shortname' =&gt; 'shop.fileList', 'version' =&gt; '1.0-common', domId =&gt; "article-4"),
+				array('shortname' =&gt; 'shop.itemCategory', 'version' =&gt; '1.0-common', domId =&gt; "article-5"),
+				// 文章目录
+				array('shortname' =&gt; 'shop.fileDir', 'version' =&gt; '1.0-common', domId =&gt; "article-6"),
+				// 文章目录 默认
+				array('shortname' =&gt; 'shop.fileDirDefault', 'version' =&gt; '1.0-common', domId =&gt; "article-7"),
+				array('shortname' =&gt; 'shop.fileSearch', 'version' =&gt; '1.0-common', domId =&gt; "article-8"),
+				array('shortname' =&gt; 'shop.topList', 'version' =&gt; '1.0-common', domId =&gt; "article-10")
+			);
+
+			echo include_modules('sub-modules', $sub_modules);
+		?&gt;
+	&lt;/div&gt;
+&lt;/div&gt;]]&gt;</content>
+            <description>文章页面</description>
+        </page>
+        <page type="articleList">
+            <name>文章列表页</name>
+            <thumbnail>assets/images/articleList.png</thumbnail>
+            <file>articleList.php</file>
+            <content>&lt;![CDATA[&lt;div class="layout grid-s5m0"&gt;
+	&lt;div class="col-main"&gt;
+		&lt;div class="main-wrap J_TRegion"&gt;
+
+			&lt;?
+				$main_modules = array(
+					// 文章列表
+					array('shortname' =&gt; 'shop.fileList', 'version' =&gt; '1.0-common', domId =&gt; "article-1"),
+					array('shortname' =&gt; 'shop.fileListDefault', 'version' =&gt; '1.0-common', domId =&gt; "article-2")
+				);
+
+				echo include_modules('main-modules', $main_modules);
+			?&gt;
+
+		&lt;/div&gt;
+	&lt;/div&gt;
+
+	&lt;div class="col-sub J_TRegion"&gt;
+
+		&lt;?php
+
+			$sub_modules = array(
+				array('shortname' =&gt; 'shop.fileList', 'version' =&gt; '1.0-common', domId =&gt; "article-4"),
+				array('shortname' =&gt; 'shop.itemCategory', 'version' =&gt; '1.0-common', domId =&gt; "article-5"),
+				// 文章目录
+				array('shortname' =&gt; 'shop.fileDir', 'version' =&gt; '1.0-common', domId =&gt; "article-6"),
+				// 文章目录 默认
+				array('shortname' =&gt; 'shop.fileDirDefault', 'version' =&gt; '1.0-common', domId =&gt; "article-7"),
+				array('shortname' =&gt; 'shop.fileSearch', 'version' =&gt; '1.0-common', domId =&gt; "article-8"),
+				array('shortname' =&gt; 'shop.topList', 'version' =&gt; '1.0-common', domId =&gt; "article-10")
+			);
+
+			echo include_modules('sub-modules', $sub_modules);
+		?&gt;
+	&lt;/div&gt;
+&lt;/div&gt;]]&gt;</content>
+            <description>文章列表页</description>
+        </page>
+        <page type="list">
+            <name>搜索列表页</name>
+            <thumbnail>assets/images/searchList.png</thumbnail>
+            <file>searchList.php</file>
+            <content>&lt;![CDATA[&lt;div class="layout grid-m"&gt;
+  &lt;div class="col-main"&gt;
+    &lt;div class="main-wrap J_TRegion"&gt;
+      &lt;?php
+		$main_modules = array(
+			array('id'=&gt;'Carousel',domId=&gt;'search_1'),
+			array('shortname' =&gt; 'shop.searchList', 'version' =&gt; '1.0-wangpu', domId =&gt; "search_2")
+			//array('shortname' =&gt; 'shop.manualSpread', 'version' =&gt; '1.0-wangpu', domId =&gt; "index-02"),
+			//array('shortname' =&gt; 'shop.itemRecommend', 'version' =&gt; '1.0-wangpu', domId =&gt; "index-03")
+		);
+		echo include_modules('main-modules', $main_modules);
+      ?&gt;
+    &lt;/div&gt;
+  &lt;/div&gt;
+&lt;/div&gt;]]&gt;</content>
+            <description>搜索列表页</description>
+        </page>
+    </pages>
+</site>

@@ -1,0 +1,57 @@
+<?xml version="1.0" encoding="GBK" standalone="yes"?>
+<module xsi:noNamespaceSchemaLocation="../../../module.xsd" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance">
+    <id>Action</id>
+    <name>活动区域</name>
+    <file>Action.php</file>
+    <thumbnail>assets/images/icon_3.png</thumbnail>
+    <description>活动区域,可发布4个促销活动.图片加文字形式.</description>
+    <requiredCache>true</requiredCache>
+    <parameters>
+		<param name="title" label="标题" description="此板块标题,如 Hot Sale" ptype="text" formType="text">
+			Action
+		</param>
+		<param name="brand" label="品牌" description="标题后的品牌文字,如 / ADIDAS" ptype="text" formType="text">
+			/ ADIDAS
+		</param>	
+		
+        <param name="text_1" label="###活动文字1" description="活动文字说明" ptype="text" formType="text">
+            Adidas,Nike,Ecco 新品上市
+        </param>
+        <param name="imgurl_1" label="图片地址1" description="图片地址 图片大小为:220*220 ." ptype="url" formType="text">
+            http://img04.taobaocdn.com/imgextra/i4/321570392/T2SD4BXfdXXXXXXXXX_!!321570392.jpg
+        </param>
+        <param name="imglink_1" label="链接1" description="链接地址" ptype="url" formType="text">
+            http://ecafe8.taobao.com
+        </param>
+		
+        <param name="text_2" label="###活动文字2" description="活动文字说明" ptype="text" formType="text">
+            Adidas,Nike,Ecco 品牌折扣
+        </param>
+        <param name="imgurl_2" label="图片地址2" description="图片地址 图片大小为:220*220." ptype="url" formType="text">
+            http://img04.taobaocdn.com/imgextra/i4/321570392/T25D4BXeRXXXXXXXXX_!!321570392.jpg
+        </param>
+        <param name="imglink_2" label="链接2" description="链接地址" ptype="url" formType="text">
+            http://ecafe8.taobao.com
+        </param>
+		
+        <param name="text_3" label="###活动文字3" description="活动文字说明" ptype="text" formType="text">
+            Adidas,Nike,Ecco 满百包邮!
+        </param>
+        <param name="imgurl_3" label="图片地址3" description="图片地址 图片大小为:220*220." ptype="url" formType="text">
+            http://img03.taobaocdn.com/imgextra/i3/321570392/T20D4BXe4XXXXXXXXX_!!321570392.jpg
+        </param>
+        <param name="imglink_3" label="链接3" description="链接地址" ptype="url" formType="text">
+            http://ecafe8.taobao.com
+        </param>
+		
+        <param name="text_4" label="###活动文字4" description="活动文字说明" ptype="text" formType="text">
+            Adidas,Nike,Ecco 全场满就送!
+        </param>
+        <param name="imgurl_4" label="图片地址4" description="图片地址 图片大小为:220*220." ptype="url" formType="text">   
+            http://img03.taobaocdn.com/imgextra/i3/321570392/T2.n4BXeFXXXXXXXXX_!!321570392.jpg         
+        </param>
+        <param name="imglink_4" label="链接4" description="链接地址" ptype="url" formType="text">
+            http://ecafe8.taobao.com
+        </param>
+    </parameters>
+</module>
