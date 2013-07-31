@@ -1,0 +1,10 @@
+<?xml version="1.0" encoding="GBK" standalone="yes"?>
+<module xsi:noNamespaceSchemaLocation="../../../module.xsd" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance">
+    <id>LeftBookmark</id>
+    <name>左侧收藏</name>
+    <file>LeftBookmark.php</file>
+    <thumbnail>assets/images/icon_4.png</thumbnail>
+    <description>左侧收藏</description>
+    <requiredCache>true</requiredCache>
+    <parameters/>
+</module>

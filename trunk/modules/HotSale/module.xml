@@ -1,0 +1,69 @@
+<?xml version="1.0" encoding="GBK" standalone="yes"?>
+<module xsi:noNamespaceSchemaLocation="../../../module.xsd" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance">
+    <id>HotSale</id>
+    <name>热卖推荐</name>
+    <file>HotSale.php</file>
+    <thumbnail>assets/images/icon_9.png</thumbnail>
+    <description>热卖推荐</description>
+    <requiredCache>true</requiredCache>
+    <parameters>
+		<param name="title" label="板块标题" description="此板块标题,如 Hot Sale" ptype="text" formType="text">
+			Hot Sale
+		</param>
+		<param name="brand" label="板块副标题" description="标题后的副标题文字,如 / ADIDAS" ptype="text" formType="text">
+			/ ADIDAS
+		</param>
+		
+        <param name="item_url_1" label="###宝贝地址" description="宝贝地址" ptype="url" formType="text">
+            http://item.taobao.com/auction/item_detail.htm?item_num_id=9235304855
+        </param>
+        <param name="item_img_1" label="悬停图片" description="悬停图片,须自行制作一张供切换的图片,如不填写,则显示宝贝自身图片." ptype="url" formType="text">
+            http://img04.taobaocdn.com/imgextra/i4/321570392/T23C4BXilbXXXXXXXX_!!321570392.jpg
+        </param>
+        <param name="item_url_2" label="###宝贝地址" description="宝贝地址" ptype="url" formType="text">
+            http://item.taobao.com/auction/item_detail.htm?item_num_id=9235304855
+        </param>
+        <param name="item_img_2" label="悬停图片" description="悬停图片,须自行制作一张供切换的图片,如不填写,则显示宝贝自身图片." ptype="url" formType="text">
+            http://img01.taobaocdn.com/imgextra/i1/321570392/T2698BXepbXXXXXXXX_!!321570392.jpg
+        </param>
+		
+        <param name="item_url_3" label="###宝贝地址" description="宝贝地址" ptype="url" formType="text">
+            http://item.taobao.com/auction/item_detail.htm?item_num_id=9235304855
+        </param>
+        <param name="item_img_3" label="悬停图片" description="悬停图片,须自行制作一张供切换的图片,如不填写,则显示宝贝自身图片." ptype="url" formType="text">
+            http://img02.taobaocdn.com/imgextra/i2/321570392/T20m8BXeBbXXXXXXXX_!!321570392.jpg
+        </param>
+        <param name="item_url_4" label="###宝贝地址" description="宝贝地址" ptype="url" formType="text">
+            http://item.taobao.com/auction/item_detail.htm?item_num_id=9235304855
+        </param>
+        <param name="item_img_4" label="悬停图片" description="悬停图片,须自行制作一张供切换的图片,如不填写,则显示宝贝自身图片." ptype="url" formType="text">
+            http://img04.taobaocdn.com/imgextra/i4/321570392/T2V_0BXhhXXXXXXXXX_!!321570392.jpg
+        </param>
+		
+        <param name="item_url_5" label="###宝贝地址" description="宝贝地址" ptype="url" formType="text">
+            http://item.taobao.com/auction/item_detail.htm?item_num_id=9235304855
+        </param>
+        <param name="item_img_5" label="悬停图片" description="悬停图片,须自行制作一张供切换的图片,如不填写,则显示宝贝自身图片." ptype="url" formType="text">
+            http://img03.taobaocdn.com/imgextra/i3/321570392/T2P_0BXhpXXXXXXXXX_!!321570392.jpg
+        </param>
+        <param name="item_url_6" label="###宝贝地址" description="宝贝地址" ptype="url" formType="text">
+            http://item.taobao.com/auction/item_detail.htm?item_num_id=9235304855
+        </param>
+        <param name="item_img_6" label="悬停图片" description="悬停图片,须自行制作一张供切换的图片,如不填写,则显示宝贝自身图片." ptype="url" formType="text">
+            http://img04.taobaocdn.com/imgextra/i4/321570392/T2KD0BXhBXXXXXXXXX_!!321570392.jpg
+        </param>
+		
+        <param name="item_url_7" label="###宝贝地址" description="宝贝地址" ptype="url" formType="text">
+            http://item.taobao.com/auction/item_detail.htm?item_num_id=9235304855
+        </param>
+        <param name="item_img_7" label="悬停图片" description="悬停图片,须自行制作一张供切换的图片,如不填写,则显示宝贝自身图片." ptype="url" formType="text">
+            http://img01.taobaocdn.com/imgextra/i1/321570392/T2GD0BXhJXXXXXXXXX_!!321570392.jpg
+        </param>
+        <param name="item_url_8" label="###宝贝地址" description="宝贝地址" ptype="url" formType="text">
+            http://item.taobao.com/auction/item_detail.htm?item_num_id=9235304855
+        </param>
+        <param name="item_img_8" label="悬停图片" description="悬停图片,须自行制作一张供切换的图片,如不填写,则显示宝贝自身图片." ptype="url" formType="text">
+            http://img03.taobaocdn.com/imgextra/i3/321570392/T2A_0BXhVXXXXXXXXX_!!321570392.jpg
+        </param>
+	</parameters>
+</module>

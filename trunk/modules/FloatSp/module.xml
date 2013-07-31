@@ -1,0 +1,60 @@
+<?xml version="1.0" encoding="GBK" standalone="yes"?>
+<module xsi:noNamespaceSchemaLocation="../../../module.xsd" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance">
+    <id>FloatSp</id>
+    <name>浮动客服</name>
+    <file>FloatSp.php</file>
+    <thumbnail>assets/images/icon_2.png</thumbnail>
+    <description>浮动客服,不限制数量.</description>
+    <requiredCache>true</requiredCache>
+    <parameters>
+        <param label="顶部距离" formType="text" readonly="false" description="输入顶部距离,范围在1-100.越小越靠近顶部,超过100不显示,2个分组时推荐35." ptype="number" name="TopHeight">&lt;![CDATA[35]]&gt;</param>
+        <param label="图标模式" formType="select" readonly="false" description="选大图标或小图标." ptype="number" name="Mode">&lt;![CDATA[]]&gt;
+            <option value="0">小图标模式</option>
+            <option value="1">大图标模式</option>
+        </param>
+        <param label="第一组标题" formType="text" readonly="false" description="标题,输入0则不显示本组" ptype="text" name="Group_1_Title">&lt;![CDATA[售前咨询]]&gt;</param>
+        <param label="第一组旺旺ID" formType="text" readonly="false" description="填写旺旺ID,用逗号分割(必须使用英文输入法的逗号 , )." ptype="text" name="Group_1_Ids">&lt;![CDATA[ecafe8,ecafe8,ecafe8]]&gt;</param>
+        <param label="第一组旺旺名称" formType="text" readonly="false" description="填写旺旺名称,用逗号分割(必须使用英文输入法的逗号 , )每个名称不要太长,建议两个字. 大图标模式不显示名称!小图标模式下可能会出现状态获取不正常! ##### 说明: 名称个数需和上面ID个数一样,如果个数不一样将按顺序赋名. 建议到记事本里写好了在复制上来 #####" ptype="text" name="Group_1_Names">&lt;![CDATA[小一,小二,小三]]&gt;</param>
+        <param label="第二组标题" formType="text" readonly="false" description="标题,输入0则不显示本组" ptype="text" name="Group_2_Title">&lt;![CDATA[售后服务]]&gt;</param>
+        <param label="第二组旺旺ID" formType="text" readonly="false" description="填写旺旺ID,用逗号分割(必须使用英文输入法的逗号 , )." ptype="text" name="Group_2_Ids">&lt;![CDATA[ecafe8,ecafe8,ecafe8]]&gt;</param>
+        <param label="第二组旺旺名称" formType="text" readonly="false" description="填写旺旺名称,用逗号分割(必须使用英文输入法的逗号 , )每个名称不要太长,建议两个字. 大图标模式不显示名称! ##### 说明: 名称个数需和上面ID个数一样,如果个数不一样将按顺序赋名. 建议到记事本里写好了在复制上来 #####" ptype="text" name="Group_2_Names">&lt;![CDATA[小一,小二,小三]]&gt;</param>
+        <param label="第三组标题" formType="text" readonly="false" description="标题,输入0则不显示本组" ptype="text" name="Group_3_Title">&lt;![CDATA[0]]&gt;</param>
+        <param label="第三组旺旺ID" formType="text" readonly="false" description="填写旺旺ID,用逗号分割(必须使用英文输入法的逗号 , )." ptype="text" name="Group_3_Ids">&lt;![CDATA[ecafe8,ecafe8,ecafe8,ecafe8,ecafe8]]&gt;</param>
+        <param label="第三组旺旺名称" formType="text" readonly="false" description="填写旺旺名称,用逗号分割(必须使用英文输入法的逗号 , )每个名称不要太长,建议两个字. 大图标模式不显示名称! ##### 说明: 名称个数需和上面ID个数一样,如果个数不一样将按顺序赋名. 建议到记事本里写好了在复制上来 #####" ptype="text" name="Group_3_Names">&lt;![CDATA[小一,小二,小三]]&gt;</param>
+        <param label="第四组标题" formType="text" readonly="false" description="标题,输入0则不显示本组" ptype="text" name="Group_4_Title">&lt;![CDATA[0]]&gt;</param>
+        <param label="第四组旺旺ID" formType="text" readonly="false" description="填写旺旺ID,用逗号分割(必须使用英文输入法的逗号 , )." ptype="text" name="Group_4_Ids">&lt;![CDATA[ecafe8,ecafe8,ecafe8,ecafe8,ecafe8]]&gt;</param>
+        <param label="第四组旺旺名称" formType="text" readonly="false" description="填写旺旺名称,用逗号分割(必须使用英文输入法的逗号 , )每个名称不要太长,建议两个字.##### 说明: 名称个数需和上面ID个数一样,如果个数不一样将按顺序赋名. 建议到记事本里写好了在复制上来 #####" ptype="text" name="Group_4_Names">&lt;![CDATA[小一,小二,小三]]&gt;</param>
+    </parameters>
+    <content>&lt;![CDATA[&lt;div style="top:&lt;? echo $_MODULE['TopHeight']?&gt;%;right:5px;" class="ww"&gt;
+	&lt;div class="float_bd  J_TBox" style="right:0px;" &lt;?php echo $_MODULE_TOOLBAR ?&gt;&gt;
+    	&lt;h2 class="bg_fdcf71_ff8400"&gt;在线客服&lt;/h2&gt;
+        &lt;ul&gt;
+&lt;?
+for ($i=1;$i&lt;5;$i++) {	
+	if (!$_MODULE['Group_'.$i.'_Title']==0){
+		$Title = $_MODULE['Group_'.$i.'_Title'];
+		echo'&lt;h3&gt;'.$Title.'&lt;/h3&gt;';
+		$Ids = explode(",",$_MODULE['Group_'.$i.'_Ids']);
+		$Names = explode(",",$_MODULE['Group_'.$i.'_Names']);
+		for ($n=0;$n&lt;count($Ids);$n++) {
+			if ($_MODULE['Mode']==1) 
+			{
+				echo '&lt;li&gt;&lt;span class="J_WangWang"  data-nick="'.$Ids[$n].'" data-icon="large" data-display="inline"&gt;&lt;/span&gt;&lt;/li&gt;';
+			}else
+			{			
+				echo '&lt;li&gt;&lt;span class="J_WangWang"  data-nick="'.$Ids[$n].'" data-icon="small" data-display="inline"&gt;'.$Names[$n].'&lt;/span&gt;&lt;/li&gt;';
+			}
+		}
+	}
+}
+?&gt;
+        &lt;/ul&gt;
+        &lt;div class="addfav"&gt;
+          &lt;a href="&lt;? echo $uriManager-&gt;favoriteLink();?&gt;" target="_blank"&gt;加入收藏&lt;/a&gt;
+        &lt;/div&gt;
+        &lt;div class="top"&gt;
+          &lt;a href="#"&gt;回到顶部&lt;/a&gt;
+        &lt;/div&gt;
+    &lt;/div&gt;
+&lt;/div&gt;]]&gt;</content>
+</module>

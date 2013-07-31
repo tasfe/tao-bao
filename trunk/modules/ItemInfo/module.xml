@@ -1,0 +1,34 @@
+<?xml version="1.0" encoding="GBK" standalone="yes"?>
+<module xsi:noNamespaceSchemaLocation="../../../module.xsd" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance">
+    <id>ItemInfo</id>
+    <name>宝贝详情</name>
+    <file>ItemInfo.php</file>
+    <thumbnail>assets/images/icon_6.png</thumbnail>
+    <description>宝贝详情</description>
+    <requiredCache>true</requiredCache>    
+    <parameters>
+        <param ptype="text" name="item_1_title" label="标题1" formType="text" description="标题 如:宝贝描述 ,输入0则不显示该项">宝贝描述</param>
+        <param ptype="htmlarea" name="item_1_cont" label="编辑内容" formType="textarea" description="编辑内容 如:宝贝描述">编辑宝贝描述</param>
+		<param name="item_1_img" label="图片1"  ptype="url" formType="text" description="填写图片地址">
+			http://img02.taobaocdn.com/tps/i2/T1h4tZXnNaXXXXXXXX-296-65.gif
+		</param>
+		
+        <param ptype="text" name="item_2_title" label="标题2" formType="text" description="标题 如:买家须知 ,输入0则不显示该项">买家须知</param>
+        <param ptype="htmlarea" name="item_2_cont" label="编辑内容" formType="textarea" description="编辑内容 如:买家须知 ">编辑买家须知</param>
+		<param name="item_2_img" label="图片2"  ptype="url" formType="text" description="填写图片地址">
+			http://img02.taobaocdn.com/tps/i2/T1h4tZXnNaXXXXXXXX-296-65.gif
+		</param>
+		
+        <param ptype="text" name="item_3_title" label="标题3" formType="text" description="标题 如:联系方式 ,输入0则不显示该项">联系方式</param>
+        <param ptype="htmlarea" name="item_3_cont" label="编辑内容" formType="textarea" description="编辑内容 如:联系方式 ">编辑联系方式</param>
+		<param name="item_3_img" label="图片3"  ptype="url" formType="text" description="填写图片地址">
+			http://img02.taobaocdn.com/tps/i2/T1h4tZXnNaXXXXXXXX-296-65.gif
+		</param>
+		
+        <param ptype="text" name="item_4_title" label="标题4" formType="text" description="标题 如:配送说明 ,输入0则不显示该项">配送说明</param>
+        <param ptype="htmlarea" name="item_4_cont" label="编辑内容" formType="textarea" description="编辑内容 如:配送说明 ">编辑配送说明</param>
+		<param name="item_4_img" label="图片4"  ptype="url" formType="text" description="填写图片地址">
+			http://img02.taobaocdn.com/tps/i2/T1h4tZXnNaXXXXXXXX-296-65.gif
+		</param>
+    </parameters>
+</module>

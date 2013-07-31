@@ -1,0 +1,57 @@
+<?xml version="1.0" encoding="GBK" standalone="yes"?>
+<module xsi:noNamespaceSchemaLocation="../../../module.xsd" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance">
+    <id>Notice</id>
+    <name>店铺公告</name>
+    <file>Notice.php</file>
+    <thumbnail>assets/images/icon_5.png</thumbnail>
+    <description>Shop Announcement</description>
+    <requiredCache>true</requiredCache>
+    <parameters>	
+		<param name="title" label="板块标题" description="此板块标题,如 Shop Announcement" ptype="text" formType="text">
+			Shop Announcement
+		</param>
+		<param name="brand" label="板块副标题" description="标题后的副标题文字,如 / Notice" ptype="text" formType="text">
+			/ Notice
+		</param>
+		
+		<param name="ACT_Title_1" label="活动一标题" description="活动一标题" ptype="text" formType="text">
+			ADIDAS 周末特价
+		</param>
+		<param name="ACT_Cont_1" label="活动一内容" description="活动一内容" ptype="textarea" formType="textarea">
+			ADIDAS 周末特价ADIDAS 周末特价ADIDAS 周末特价ADIDAS 周末特价ADIDAS 周末特价
+			ADIDAS 周末特价ADIDAS 周末特价ADIDAS 周末特价ADIDAS 周末特价ADIDAS 周末特价
+		</param>
+		<param name="ACT_Link_1" label="活动一链接" description="活动一链接" ptype="url" formType="text">
+			http://www.taobao.com
+		</param>
+		
+		<param name="ACT_Title_2" label="活动二标题" description="活动二标题" ptype="text" formType="text">
+			NIKE 降价50% ! 
+		</param>
+		<param name="ACT_Cont_2" label="活动二内容" description="活动二内容" ptype="textarea" formType="textarea">
+			NIKE 降价50% ! NIKE 降价50% ! NIKE 降价50% ! NIKE 降价50% ! NIKE 降价50% !  
+			NIKE 降价50% ! NIKE 降价50% ! NIKE 降价50% ! NIKE 降价50% ! NIKE 降价50% ! 
+		</param>
+		<param name="ACT_Link_2" label="活动二链接" description="活动二链接" ptype="url" formType="text">
+			http://www.taobao.com
+		</param>
+		
+		
+		<param name="Notice_Title" label="公告标题" description="公告标题" ptype="text" formType="text">
+			店铺公告
+		</param>
+		
+		<param name="Notice" label="公告内容" description="公告内容" ptype="textarea" formType="textarea">
+			ADIDAS PUMA KAPPA 新品到货. 周五特卖.ADIDAS PUMA KAPPA 新品到货. 周五特卖.ADIDAS PUMA KAPPA 新品到货. 周五特卖.
+			ADIDAS PUMA KAPPA 新品到货. 周五特卖.ADIDAS PUMA KAPPA 新品到货. 周五特卖.ADIDAS PUMA KAPPA 新品到货. 周五特卖.
+		</param>
+		
+		<param name="Introduction_Title" label="店铺简介标题" description="店铺简介标题" ptype="text" formType="text">
+			关于我们
+		</param>
+		<param name="Introduction" label="店铺简介内容" description="店铺简介内容" ptype="textarea" formType="textarea">
+			我们是专门销售品牌折扣的专业店铺。为获得最新产品信息或促销活动,请点下方按钮收藏我们的店铺网址。
+			我们是专门销售品牌折扣的专业店铺。为获得最新产品信息或促销活动,请点下方按钮收藏我们的店铺网址。
+		</param>
+	</parameters>
+</module>

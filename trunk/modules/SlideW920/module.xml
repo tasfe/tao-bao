@@ -1,0 +1,74 @@
+<?xml version="1.0" encoding="GBK" standalone="yes"?>
+<module xsi:noNamespaceSchemaLocation="../../../module.xsd" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance">
+    <id>SlideW920</id>
+    <name>图片轮播</name>
+    <file>SlideW920.php</file>
+    <thumbnail>assets/images/icon_7.png</thumbnail>
+    <description>图片轮播,图片宽度为920像素,高度自动.可选择展示图片数量.可选择图片显示效果,可设置广告图片高度.</description>
+    <requiredCache>true</requiredCache>
+    <parameters>	
+	    <param name="imgNumb" label="选择轮播图片数量" description="至少2张" ptype="number" formType="select">		
+			<option value="2">2张</option>
+			<option value="3">3张</option>
+			<option value="4">4张</option>
+			<option value="5">5张</option>
+			<option value="6">6张</option>
+		</param>	
+		
+		<param name="showMode" label="图片显示效果" description="图片显示效果"  ptype="text" formType="select">
+			<option value="fade">淡隐淡现</option>
+			<option value="scrolly">垂直滚动</option>
+			<option value="scrollx">水平滚动</option>
+		</param>
+		
+		<param name="isNav" label="是否显示数字导航" description="是否显示数字导航"  ptype="number" formType="select">
+			<option value="1">是</option>
+			<option value="0">否</option>
+		</param>	
+				
+        <param name="imgHeight" label="图片高度" description="px 请只填数字 建议高度为 320" ptype="number" formType="text">320</param>
+		
+			
+        <param name="imgurl_1" label="图片地址1" description="图片地址 图片宽度为920px,高度自定义." ptype="url" formType="text">
+            http://img01.taobaocdn.com/tps/i1/T16g00XaBEXXXXXXXX.jpg
+        </param>
+        <param name="imglink_1" label="链接1" description="链接地址" ptype="url" formType="text">
+            http://www.taobao.com
+        </param>
+		
+        <param name="imgurl_2" label="图片地址2" description="图片地址 图片宽度为920px,高度自定义." ptype="url" formType="text">
+            http://img03.taobaocdn.com/tps/i3/T1OE8YXc0dXXXXXXXX.jpg
+        </param>
+        <param name="imglink_2" label="链接2" description="链接地址" ptype="url" formType="text">
+            http://www.taobao.com
+        </param>
+		
+        <param name="imgurl_3" label="图片地址3" description="图片地址 图片宽度为920px,高度自定义." ptype="url" formType="text">
+            http://img01.taobaocdn.com/tps/i1/T1cqFZXX8eXXXXXXXX-950-90.gif
+        </param>
+        <param name="imglink_3" label="链接3" description="链接地址" ptype="url" formType="text">
+            http://www.taobao.com
+        </param>
+		
+        <param name="imgurl_4" label="图片地址4" description="图片地址 图片宽度为920px,高度自定义." ptype="url" formType="text">            
+            http://img.alimama.cn/bcrm/adboard/picture/2011-01-27/110127160059181.jpg
+        </param>
+        <param name="imglink_4" label="链接4" description="链接地址" ptype="url" formType="text">
+            http://www.taobao.com
+        </param>
+		
+        <param name="imgurl_5" label="图片地址5" description="图片地址 图片宽度为920px,高度自定义." ptype="url" formType="text">
+            http://img01.taobaocdn.com/tps/i1/T1cqFZXX8eXXXXXXXX-950-90.gif
+        </param>
+        <param name="imglink_5" label="链接5" description="链接地址" ptype="url" formType="text">
+            http://www.taobao.com
+        </param>
+		
+        <param name="imgurl_6" label="图片地址6" description="图片地址 图片宽度为920px,高度自定义." ptype="url" formType="text">
+			http://img01.taobaocdn.com/tps/i1/T1cqFZXX8eXXXXXXXX-950-90.gif
+        </param>
+        <param name="imglink_6" label="链接6" description="链接地址" ptype="url" formType="text">
+            http://www.taobao.com
+        </param>
+	</parameters>
+</module>
